@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Md Sabbir Khan — Personal Website</title>
+  <meta name="description" content="Md Sabbir Khan — Public Administration student, writer, typist, and content creator.">
+  <meta property="og:title" content="Md Sabbir Khan" />
+  <meta property="og:description" content="Student, content writer, typist. Contact: mdsabbirk99@gmail.com" />
+  <meta property="og:type" content="website" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#94a3b8;--accent:#06b6d4}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,'Noto Sans',sans-serif;margin:0;background:linear-gradient(180deg,#071023 0%, #071827 100%);color:#e6eef6}
+    .container{max-width:960px;margin:40px auto;padding:24px}
+    header{display:flex;gap:16px;align-items:center}
+    .avatar{width:96px;height:96px;border-radius:14px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:28px;color:#021124}
+    h1{margin:0;font-size:28px}
+    p.lead{color:var(--muted);margin-top:6px}
+    .card{background:rgba(255,255,255,0.03);padding:20px;border-radius:12px;margin-top:20px}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:18px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{background:rgba(255,255,255,0.04);padding:8px 10px;border-radius:999px;font-size:14px;color:var(--muted)}
+    a.btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:#012; font-weight:700;text-decoration:none}
+    footer{margin-top:28px;color:var(--muted);font-size:14px}
+    @media (max-width:880px){.grid{grid-template-columns:1fr}header{flex-direction:row} .avatar{width:72px;height:72px}}
+    /* simple project list */
+    .projects{display:grid;gap:12px}
+    .project{padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01))}
+    label.field{display:block;font-size:13px;color:var(--muted);margin-bottom:6px}
+    input,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:inherit}
+    .small{font-size:13px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">MS</div>
+      <div>
+        <h1>Md Sabbir Khan</h1>
+        <p class="lead">Public Administration · Master's student · Content writer · Typist</p>
+        <p class="small">Email: <a href="mailto:mdsabbirk99@gmail.com">mdsabbirk99@gmail.com</a> · Phone: 01538386986</p>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <section class="card">
+          <h2>About me</h2>
+          <p class="small">আমি একজন পাবলিক অ্যাডমিনিস্ট্রেশন বিভাগে মাস্টারস পড়ি। এম এস ওয়ার্ড, এক্সেল, টাইপিং, কনটেন্ট রাইটিং ও প্রুফরিডিং-এ দক্ষ। এই সাইটে আমার কাজ, রিসুমি এবং যোগাযোগের তথ্য পাবেন।</p>
+        </section>
+
+        <section class="card">
+          <h2>Portfolio / Projects</h2>
+          <div class="projects">
+            <div class="project">
+              <strong>প্রজেক্টের নাম — একটি ছোট বর্ণনা</strong>
+              <p class="small">এই জায়গায় আপনার রিপোর্ট, আর্টিকেল, বা ফাইলগুলোর শিরোনাম ও সংক্ষিপ্ত বর্ণনা লিখুন।</p>
+              <p class="small"><a href="#">View / Download</a></p>
+            </div>
+            <div class="project">
+              <strong>প্রজেক্ট ২ — ছোট বর্ণনা</strong>
+              <p class="small">আরেকটি নমুনা প্রজেক্ট।</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>Contact</h2>
+          <p class="small">চাইলে সরাসরি ইমেইল করতে পারেন অথবা নিচের ফর্ম ব্যবহার করে একটি মেসেজ পাঠান — (নোট: বর্তমান এই ফাইলটি স্ট্যাটিক; পাঠানো হলে এটি মোবাইল/সার্ভার সাইড স্ক্রিপ্ট ছাড়া কাজ করবে।)</p>
+          <form action="mailto:mdsabbirk99@gmail.com" method="post" enctype="text/plain">
+            <label class="field">Your name<input type="text" name="name" placeholder="Your name"></label>
+            <label class="field">Message<textarea name="message" rows="4" placeholder="Write your message..."></textarea></label>
+            <button class="btn" type="submit">Send Email</button>
+          </form>
+        </section>
+      </main>
+
+      <aside>
+        <div class="card">
+          <h3>Quick info</h3>
+          <div class="skills">www.sabbirkhan.com
+            <div class="chip">MS Word</div>
+            <div class="chip">Excel</div>
+            <div class="chip">Typing</div>
+            <div class="chip">Content Writing</div>
+            <div class="chip">Proofreading</div>
+          </div>
+          <p style="margin-top:12px;"><a class="btn" href="#">Download Resume (PDF)</a></p>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h3>Social</h3>
+          <p class="small">LinkedIn / Facebook / GitHub links here (অথবা সরাসরি URL যোগ করুন)</p>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      © <span id="year"></span> Md Sabbir Khan — Built with ❤️
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
